@@ -1,0 +1,168 @@
+* {
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+    font-family: 'Arial', sans-serif;
+
+    background-color: #f4f4f9;
+    color: #333; 
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #0033a0; 
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 4px solid #fcd116; 
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #0033a0; 
+    border-bottom: 2px solid #ce2029;
+    padding-bottom: 5px;
+    margin: 40px 0 20px;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #ce2029;
+    margin: 25px 0 10px;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 15px; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #fcd116; 
+    color: #0033a0;
+}
+
+
+section, article, main > div {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero figure img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover; 
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.hero .text-hero {
+
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: justify; 
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; 
+    margin: 15px auto; 
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+#MostBeautifulPlaces h3 {
+    color: #444;
+    margin-top: 15px;
+}
+
+#MostBeautifulPlaces img {
+    
+    height: 250px;
+    object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column; 
+        gap: 5px;
+    }
+
+    nav ul li a {
+        display: block; 
+    }
+
+    main {
+        width: 95%;
+    }
+}
+
+footer {
+    text-decoration: none;
+    color: crimson;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+footer a:hover {
+    color: yellow;
+    font-size: 25px;
+}
